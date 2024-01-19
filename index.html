@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Partes de la Cara</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="icon" href="icon.png" type="image/png">
+</head>
+
+<body>
+    <header>
+		<div class="menu">
+			<button class="menu-toggle">☰</button>
+			<ul><li><a href="https://axelcotongutierrez.github.io/learningmathematicas/">
+				<img src="cb.jpg"> 
+			</a></li>
+				<li><a href="/learningmathematicas/projects/Cursos/">Cursos y Materias</a></li>
+				<li><a href="/learningmathematicas/projects/Niveles/">Niveles</a></li>
+				<li><a href="/learningmathematicas/">Entradas</a></li>
+				<li><a href="/learningmathematicas/tags">Etiquetas</a></li>
+				<li><a href="/learningmathematicas/about">Blog</a></li>
+				<li><a href="#">Utilidades</a>
+					<ul>
+						<li><a href="/learningmathematicas/projects/Utilidades/Glosario.html">Glosario</a></li>
+						<li><a href="/learningmathematicas/projects/Utilidades/Programacion.html">Programación</a></li>
+						<li><a href="/learningmathematicas/projects/Utilidades/Soroban.html">Soroban</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<a href="https://axelcotongutierrez.github.io/learningmathematicas/">
+			<img src="https://axelcotongutierrez.github.io/learningmathematicas/assets/images//top.jpg" alt="Blog Mathematica" style="display: block; margin: 0 auto; width: 100%; height: auto;">
+		  </a>
+		  <h1 style="text-align: center;">JUEGO DE LAS PARTES DE LA CARA</h1>
+		</header>
+	  <br>
+      <p class="textosuperior" style="text-align: center;">Este contenido se vincula con el 
+		<b><a href="https://axelcotongutierrez.github.io/learningmathematicas/projects/Niveles/#level-5-detail" target="_blank">Nivel 5</a></b>
+		 de la materia <a title="Matemáticas" href="https://axelcotongutierrez.github.io/learningmathematicas/tags/?tag=biología" target="_blank"><img class="center-block img-responsive" width="30" alt="Biología" src="/learningmathematicas/assets/images/pages/figuras/Biología.jpg"></a>
+		 y es perteneciente al curso <a title="Infantil" href="https://axelcotongutierrez.github.io/learningmathematicas/tags/?tag=infantil" target="_blank"><img class="center-block img-responsive" style="display: inline-block;" width="30" alt="Infantil" src="/learningmathematicas/assets/images/pages/figuras/infantil.png"></a>
+		</p>
+	  <br>
+
+    <div class="container2">
+        <span class="pregunta">Arrastra las palabras a la parte correcta de la Cara</span>
+    </div>
+    <div class="container">
+        <div id="game-area" style="position: relative;">
+            <img src="cara.jpg" id="cara" alt="Imagen de la cara">
+            <div class="word-slot" id="cabello-slot"></div>
+            <div class="word-slot" id="ceja-slot"></div>
+            <div class="word-slot" id="frente-slot"></div>
+            <div class="word-slot" id="nariz-slot"></div>
+            <div class="word-slot" id="dientes-slot"></div>
+            <div class="word-slot" id="ojo-slot"></div>
+            <div class="word-slot" id="oreja-slot"></div>
+            <div class="word-slot" id="lengua-slot"></div>
+            <div class="word-slot" id="boca-slot"></div>
+            <div class="word-slot" id="labios-slot"></div>
+        </div>
+        
+        <div id="words-area">
+            
+            <img src="Cabello.jpg" class="draggable-word" draggable="true" alt="Cabello">
+            <img src="ceja.jpg" class="draggable-word" draggable="true" alt="Ceja">
+            <img src="frente.jpg" class="draggable-word" draggable="true" alt="Frente">
+            <img src="nariz.jpg" class="draggable-word" draggable="true" alt="Nariz">
+            <img src="dientes.jpg" class="draggable-word" draggable="true" alt="Dientes">
+            <img src="ojo.jpg" class="draggable-word" draggable="true" alt="Ojo">
+            <img src="oreja.jpg" class="draggable-word" draggable="true" alt="Oreja">
+            <img src="lengua.jpg" class="draggable-word" draggable="true" alt="Lengua">
+            <img src="boca.jpg" class="draggable-word" draggable="true" alt="Boca">
+            <img src="labios.jpg" class="draggable-word" draggable="true" alt="Labios">
+        </div>
+        <button id="check-button" class="guess-button">Comprobar</button>
+        <br>
+        <div class="msj" id="result"></div>
+        <br>
+        <button id="reset-button" class="guess-button">Volver a Jugar</button>
+
+    </div>
+    <script src="script.js"></script>
+    <br>
+	<footer class="footer">
+		<ul class="footer-links">
+			<li><a href="http://github.com/AxelCotonGutierrez"> <img src="githubinverseicon.jpg"></a></li>
+			<li><a href="https://www.youtube.com/@learningmathematicas"> <img src="youtubeinverseicon.jpg"></i></a></li>
+		</ul>
+	</footer>
+</body>
+</html>

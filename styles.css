@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Nunito';
+}
+
+body {
+  text-align: center;
+  color: #0c4fe1;
+  height: 100%; 
+}
+
+h1 {
+  color: #EABE3F;
+  padding: 50px;
+  font-size: 40px;
+}
+
+.container {
+  background-color: none;
+  max-width: 80%;
+  margin: auto;
+  border: 3px solid #EABE3F;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  padding: 50px 0;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; 
+}
+
+.container2 {
+  background-color: none;
+  max-width: 80%;
+  margin: auto;
+  border: 3px solid #EABE3F;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  padding: 50px 0;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Evitar desbordamiento horizontal en dispositivos móviles */
+}
+
+.textosuperior {
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+  color:black;
+  padding-right: 0.5em;
+  padding-left: 0.5em;
+}
+.pregunta {
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 40px;
+  justify-content: center;
+  align-items: center;
+  padding-right: 0.5em;
+  padding-left: 0.5em;
+}
+
+.msj {
+  font-size: 30px;
+  height: 30px;
+}
+
+.guess-button {
+  background-color: #4285f4;
+  border: 2px solid #000;
+  color: #fff;
+  padding: 10px 10px;
+  font-size: 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.guess-button:hover {
+  background-color: #3367d6;
+}
+
+#cara {
+  width: 750px; 
+  height: 750px;
+}
+
+
+#words-area {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  
+  .draggable-word {
+    margin: 10px;
+    border: 1px solid #EABE3F;
+    border-radius: 5px;
+    cursor: move;
+    width: 150px;
+    height: 50px;
+    
+  }
+
+  .word-slot {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    border: 2px dashed #EABE3F;
+    height: 60px; 
+    width: 180px; 
+    position: absolute;
+    background-color: transparent;
+  }
+  #cabello-slot {
+    top: 4%;  
+    left: 5%; 
+   }
+#ceja-slot {
+  top: 35%;  
+  left: 1%; 
+   }
+#nariz-slot {
+  top: 57%; 
+  left: 1%; 
+  }
+#frente-slot {
+  top: 12%;  
+  left: 82%; 
+  }
+ #dientes-slot {
+  top: 77%;  
+  left: 6%; 
+  }
+ #ojo-slot {
+  top: 32%; 
+  left: 87%; 
+}
+#oreja-slot {
+  top: 52%;
+  left: 91%; 
+ }
+#lengua-slot {
+  top: 70%; 
+  left: 77%; 
+ }
+#boca-slot {
+  top: 90%;  
+  left: 18%; 
+  }
+ #labios-slot {
+  top: 85%;  
+  left: 65%; 
+   }
+   @media (max-width: 768px) {
+     
+    .container, .container2 {
+      max-width: 80%; /* Ancho completo en dispositivos móviles */
+      flex-wrap: wrap; /* Permitir envolver las imágenes en múltiples líneas */
+    }
+    
+    .guess-button {
+      font-size: 15px;
+      padding: 5x 5px;
+        }
+    .msj {
+         
+      font-size: 20px;
+         
+        }
+    #cara {
+          width: 200px; 
+          height: 200px; 
+      }
+    .word-slot {
+      height: 15px; 
+      width: 45px; 
+    }
+    .draggable-word {
+      margin: 5px; 
+      width: 40px; 
+      height: 12px; 
+     
+    }
+  
+    /* Aquí podrías ajustar el tamaño de las imágenes si están definidas en línea */
+    .draggable-word img {
+      width: 50%; 
+      height: auto; 
+    }
+   
+  }
+ 
